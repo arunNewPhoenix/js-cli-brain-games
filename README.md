@@ -3,8 +3,14 @@
 First project of Hexlet Frontend profession.
 
 ### Setup
+`npm install -g bringoff-brain-games`
+
 [![asciicast](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0.svg)](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0)
 
-### Play
+### "Calculator" Game
+[![asciicast](https://asciinema.org/a/SrOxaHDToFVAgzKkyKprjcPbq.svg)](https://asciinema.org/a/SrOxaHDToFVAgzKkyKprjcPbq)
+[![asciicast](https://asciinema.org/a/xixPbiJoTq6ZB7OMtVWVqhOaT.svg)](https://asciinema.org/a/xixPbiJoTq6ZB7OMtVWVqhOaT)
+
+### "Is Even" Game
 [![asciicast](https://asciinema.org/a/vsXwFPg8ZbfKJPjwChAw2RjJA.svg)](https://asciinema.org/a/vsXwFPg8ZbfKJPjwChAw2RjJA)
 [![asciicast](https://asciinema.org/a/yNQ8uHslh8cgKBrYdyQLBJVb1.svg)](https://asciinema.org/a/yNQ8uHslh8cgKBrYdyQLBJVb1)
