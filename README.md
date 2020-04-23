@@ -7,6 +7,10 @@ First project of Hexlet Frontend profession.
 
 [![asciicast](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0.svg)](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0)
 
+### "Prime" Game
+[![asciicast](https://asciinema.org/a/BDQE4KAFuY68q7zkab5q4xEMU.svg)](https://asciinema.org/a/BDQE4KAFuY68q7zkab5q4xEMU)
+[![asciicast](https://asciinema.org/a/ujSbdUARS4aNl8OCrGvee6Gsm.svg)](https://asciinema.org/a/ujSbdUARS4aNl8OCrGvee6Gsm)
+
 ### "Progression" Game
 [![asciicast](https://asciinema.org/a/7NIh6FUv6TqiwPDaAdUTw1b7q.svg)](https://asciinema.org/a/7NIh6FUv6TqiwPDaAdUTw1b7q)
 [![asciicast](https://asciinema.org/a/6m8PpbNfIehzMPhcWCqzh7TGw.svg)](https://asciinema.org/a/6m8PpbNfIehzMPhcWCqzh7TGw)
