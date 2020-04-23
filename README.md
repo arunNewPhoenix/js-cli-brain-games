@@ -7,6 +7,10 @@ First project of Hexlet Frontend profession.
 
 [![asciicast](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0.svg)](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0)
 
+### "Progression" Game
+[![asciicast](https://asciinema.org/a/7NIh6FUv6TqiwPDaAdUTw1b7q.svg)](https://asciinema.org/a/7NIh6FUv6TqiwPDaAdUTw1b7q)
+[![asciicast](https://asciinema.org/a/6m8PpbNfIehzMPhcWCqzh7TGw.svg)](https://asciinema.org/a/6m8PpbNfIehzMPhcWCqzh7TGw)
+
 ### "GCD" Game
 [![asciicast](https://asciinema.org/a/g2aEgbQ551nFo4zL5H4me920X.svg)](https://asciinema.org/a/g2aEgbQ551nFo4zL5H4me920X)
 [![asciicast](https://asciinema.org/a/Bfhu4MPzfXgeiqKhOpDnkox3l.svg)](https://asciinema.org/a/Bfhu4MPzfXgeiqKhOpDnkox3l)
