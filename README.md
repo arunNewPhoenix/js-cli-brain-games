@@ -7,6 +7,10 @@ First project of Hexlet Frontend profession.
 
 [![asciicast](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0.svg)](https://asciinema.org/a/8jnq0BRCGDY6hFBiySmUd7pF0)
 
+### "GCD" Game
+[![asciicast](https://asciinema.org/a/g2aEgbQ551nFo4zL5H4me920X.svg)](https://asciinema.org/a/g2aEgbQ551nFo4zL5H4me920X)
+[![asciicast](https://asciinema.org/a/Bfhu4MPzfXgeiqKhOpDnkox3l.svg)](https://asciinema.org/a/Bfhu4MPzfXgeiqKhOpDnkox3l)
+
 ### "Calculator" Game
 [![asciicast](https://asciinema.org/a/SrOxaHDToFVAgzKkyKprjcPbq.svg)](https://asciinema.org/a/SrOxaHDToFVAgzKkyKprjcPbq)
 [![asciicast](https://asciinema.org/a/xixPbiJoTq6ZB7OMtVWVqhOaT.svg)](https://asciinema.org/a/xixPbiJoTq6ZB7OMtVWVqhOaT)
