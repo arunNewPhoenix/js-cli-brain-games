@@ -1,4 +1,4 @@
-import generateNumber from './number-generator.js';
+import generateNumber from '../number-generator.js';
 
 const generateOperation = () => {
   const operations = {

@@ -1,4 +1,4 @@
-import generateNumber from './number-generator.js';
+import generateNumber from '../number-generator.js';
 
 const isEven = (number) => number % 2 === 0;
 
