@@ -8,7 +8,7 @@ const gcd = (a, b) => {
 };
 
 export const generateQuestionItem = () => {
-  const number = generateNumber(1, 9);
+  const number = generateNumber(1, 10);
   const firstMultiplier = generateNumber(1, 10);
   const secondMultiplier = generateNumber(1, 10);
 
