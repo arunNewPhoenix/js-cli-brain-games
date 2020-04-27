@@ -1,6 +1,6 @@
 import generateNumber from '../number-generator.js';
 
-export const gameDescription = () => 'Find the greatest common divisor of given numbers.';
+export const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (b === 0) return a;

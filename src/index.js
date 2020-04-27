@@ -24,7 +24,7 @@ const startGame = (getGameDescription, generateQuestionItem, attempts = 3) => {
     performGameCycle(remainingAttempts - 1);
   };
 
-  console.log(getGameDescription());
+  console.log(getGameDescription);
   performGameCycle(attempts);
 };
 

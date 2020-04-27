@@ -1,6 +1,8 @@
 import generateNumber from '../number-generator.js';
 import generateMathOperation from '../math-operation-generator.js';
 
+export const gameDescription = 'What is the result of the expression?';
+
 export const generateQuestionItem = () => {
   const firstNumber = generateNumber(1, 100);
   const secondNumber = generateNumber(1, 100);
@@ -11,5 +13,3 @@ export const generateQuestionItem = () => {
     answer,
   };
 };
-
-export const gameDescription = () => 'What is the result of the expression?';
