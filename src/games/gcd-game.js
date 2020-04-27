@@ -1,13 +1,14 @@
 import generateNumber from '../number-generator.js';
+import launchGame from '../game-engine.js';
 
-export const gameDescription = 'Find the greatest common divisor of given numbers.';
+const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const gcd = (a, b) => {
   if (b === 0) return a;
   return gcd(b, (a % b));
 };
 
-export const generateQuestionItem = () => {
+const generateQuestionItem = () => {
   const number = generateNumber(1, 10);
   const firstMultiplier = generateNumber(1, 10);
   const secondMultiplier = generateNumber(1, 10);
@@ -21,3 +22,5 @@ export const generateQuestionItem = () => {
     answer: greatestCommonDivisor.toString(),
   };
 };
+
+export default () => launchGame(gameDescription, generateQuestionItem);

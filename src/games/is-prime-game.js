@@ -1,7 +1,8 @@
 import generateNumber from '../number-generator.js';
 import convertBooleanToYesNo from '../yes-no-bool-converter.js';
+import launchGame from '../game-engine.js';
 
-export const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   const root = Math.sqrt(num);
@@ -11,7 +12,7 @@ const isPrime = (num) => {
   return num > 1;
 };
 
-export const generateQuestionItem = () => {
+const generateQuestionItem = () => {
   const randomNumber = generateNumber(0, 1000);
   const answer = isPrime(randomNumber);
   const humanReadableAnswer = convertBooleanToYesNo(answer);
@@ -20,3 +21,5 @@ export const generateQuestionItem = () => {
     answer: humanReadableAnswer,
   };
 };
+
+export default () => launchGame(gameDescription, generateQuestionItem);

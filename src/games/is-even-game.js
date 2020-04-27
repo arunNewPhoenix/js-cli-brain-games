@@ -1,5 +1,6 @@
 import generateNumber from '../number-generator.js';
 import convertBooleanToYesNo from '../yes-no-bool-converter.js';
+import launchGame from '../game-engine.js';
 
 export const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -14,3 +15,5 @@ export const generateQuestionItem = () => {
     answer: humanReadableAnswer,
   };
 };
+
+export default () => launchGame(gameDescription, generateQuestionItem);

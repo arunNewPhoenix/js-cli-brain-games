@@ -1,5 +1,6 @@
 import generateNumber from '../number-generator.js';
 import generateMathOperation from '../math-operation-generator.js';
+import launchGame from '../game-engine.js';
 
 export const gameDescription = 'What number is missing in the progression?';
 
@@ -21,3 +22,5 @@ export const generateQuestionItem = () => {
     answer: numberToExclude.toString(),
   };
 };
+
+export default () => launchGame(gameDescription, generateQuestionItem);

@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-import { gameDescription, generateQuestionItem } from '../src/games/is-even-game.js';
-import startGame from '../src/index.js';
+import startGame from '../src/games/is-even-game.js';
 
-startGame(gameDescription, generateQuestionItem);
+startGame();
