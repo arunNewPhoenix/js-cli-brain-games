@@ -3,16 +3,15 @@ import launchGame from '../game-engine.js';
 
 const gameDescription = 'What number is missing in the progression?';
 
-const generateRandomProgression = (length) => {
-  const randomStartNumber = generateNumber(1, 10);
-  const randomModifier = generateNumber(2, 5);
-  return [...Array(length).keys()]
-    .map((i) => randomStartNumber + (i * randomModifier));
-};
+const generateRandomProgression = (length, startNumber, step) => ([...Array(length).keys()]
+  .map((i) => startNumber + (i * step))
+);
 
 const generateQuestionItem = () => {
   const progressionLength = 10;
-  const numbers = generateRandomProgression(progressionLength);
+  const startNumber = generateNumber(1, 10);
+  const progressionStep = generateNumber(-10, 10);
+  const numbers = generateRandomProgression(progressionLength, startNumber, progressionStep);
   const randomPositionToExclude = generateNumber(0, progressionLength - 1);
   const numberToExclude = numbers[randomPositionToExclude];
   return {
