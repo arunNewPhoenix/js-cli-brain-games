@@ -1,5 +1,4 @@
 import generateNumber from '../number-generator.js';
-import convertBooleanToYesNo from '../yes-no-bool-converter.js';
 import launchGame from '../game-engine.js';
 
 const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -16,11 +15,10 @@ const isPrime = (num) => {
 
 const generateQuestionItem = () => {
   const randomNumber = generateNumber(0, 1000);
-  const answer = isPrime(randomNumber);
-  const humanReadableAnswer = convertBooleanToYesNo(answer);
+  const answer = isPrime(randomNumber) ? 'yes' : 'no';
   return {
     question: randomNumber,
-    answer: humanReadableAnswer,
+    answer,
   };
 };
 
