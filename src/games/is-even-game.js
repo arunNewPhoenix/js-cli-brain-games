@@ -8,11 +8,10 @@ const isEven = (number) => number % 2 === 0;
 
 const generateQuestionItem = () => {
   const randomNumber = generateNumber(-100, 100);
-  const answer = isEven(randomNumber);
-  const humanReadableAnswer = convertBooleanToYesNo(answer);
+  const answer = convertBooleanToYesNo(isEven(randomNumber));
   return {
     question: randomNumber,
-    answer: humanReadableAnswer,
+    answer,
   };
 };
 
