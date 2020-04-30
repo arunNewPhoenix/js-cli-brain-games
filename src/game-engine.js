@@ -1,6 +1,11 @@
 import readlineSync from 'readline-sync';
 
-import greetAndAskName from './greetings.js';
+const greetAndAskName = () => {
+  console.log('Welcome to the Brain Games!');
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  return userName;
+};
 
 const startGame = (getGameDescription, generateQuestionItem, attempts = 3) => {
   const userName = greetAndAskName();
