@@ -15,11 +15,11 @@ const generateQuestionItem = () => {
 
   const firstNumber = number * firstMultiplier;
   const secondNumber = number * secondMultiplier;
-  const greatestCommonDivisor = gcd(firstNumber, secondNumber);
+  const answer = gcd(firstNumber, secondNumber).toString();
 
   return {
     question: `${firstNumber} ${secondNumber}`,
-    answer: greatestCommonDivisor.toString(),
+    answer,
   };
 };
 
