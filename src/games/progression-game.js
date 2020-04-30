@@ -1,7 +1,7 @@
 import generateNumber from '../number-generator.js';
 import launchGame from '../game-engine.js';
 
-export const gameDescription = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 
 const generateRandomProgression = (length) => {
   const randomStartNumber = generateNumber(1, 10);
@@ -10,7 +10,7 @@ const generateRandomProgression = (length) => {
     .map((i) => randomStartNumber + (i * randomModifier));
 };
 
-export const generateQuestionItem = () => {
+const generateQuestionItem = () => {
   const progressionLength = 10;
   const numbers = generateRandomProgression(progressionLength);
   const randomPositionToExclude = generateNumber(0, progressionLength - 1);
