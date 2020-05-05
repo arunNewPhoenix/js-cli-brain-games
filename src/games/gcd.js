@@ -8,7 +8,7 @@ const gcd = (a, b) => {
   return gcd(b, (a % b));
 };
 
-const generateQuestionItem = () => {
+const generateGameStepData = () => {
   const number = generateNumber(1, 10);
   const firstMultiplier = generateNumber(1, 10);
   const secondMultiplier = generateNumber(1, 10);
@@ -23,4 +23,4 @@ const generateQuestionItem = () => {
   };
 };
 
-export default () => launchGame(gameDescription, generateQuestionItem);
+export default () => launchGame(gameDescription, generateGameStepData);

@@ -13,7 +13,7 @@ const isPrime = (num) => {
   return false;
 };
 
-const generateQuestionItem = () => {
+const generateGameStepData = () => {
   const randomNumber = generateNumber(0, 1000);
   const answer = isPrime(randomNumber) ? 'yes' : 'no';
   return {
@@ -22,4 +22,4 @@ const generateQuestionItem = () => {
   };
 };
 
-export default () => launchGame(gameDescription, generateQuestionItem);
+export default () => launchGame(gameDescription, generateGameStepData);

@@ -7,7 +7,7 @@ const generateRandomProgression = (length, startNumber, step) => ([...Array(leng
   .map((i) => startNumber + (i * step))
 );
 
-const generateQuestionItem = () => {
+const generateGameStepData = () => {
   const progressionLength = 10;
   const startNumber = generateNumber(1, 10);
   const progressionStep = generateNumber(-10, 10);
@@ -20,4 +20,4 @@ const generateQuestionItem = () => {
   };
 };
 
-export default () => launchGame(gameDescription, generateQuestionItem);
+export default () => launchGame(gameDescription, generateGameStepData);

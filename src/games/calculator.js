@@ -25,7 +25,7 @@ const generateMathOperation = () => {
   return operations[operationNames[randomOperationPosition]];
 };
 
-const generateQuestionItem = () => {
+const generateGameStepData = () => {
   const firstNumber = generateNumber(1, 100);
   const secondNumber = generateNumber(1, 100);
   const operation = generateMathOperation();
@@ -36,4 +36,4 @@ const generateQuestionItem = () => {
   };
 };
 
-export default () => launchGame(gameDescription, generateQuestionItem);
+export default () => launchGame(gameDescription, generateGameStepData);

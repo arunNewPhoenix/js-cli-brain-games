@@ -7,7 +7,7 @@ const greetAndAskName = () => {
   return userName;
 };
 
-const startGame = (getGameDescription, generateQuestionItem, attempts = 3) => {
+const startGame = (getGameDescription, generateGameStepData, attempts = 3) => {
   const userName = greetAndAskName();
 
   const performGameCycle = (remainingAttempts) => {
@@ -15,7 +15,7 @@ const startGame = (getGameDescription, generateQuestionItem, attempts = 3) => {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const questionItem = generateQuestionItem();
+    const questionItem = generateGameStepData();
     console.log(`Question: ${questionItem.question}`);
 
     const userAnswer = readlineSync.question('Your answer: ').trim();
