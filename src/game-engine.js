@@ -1,14 +1,9 @@
 import readlineSync from 'readline-sync';
 
-const greetAndAskName = () => {
+const startGame = (getGameDescription, generateGameStepData, attemptCount = 3) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  return userName;
-};
-
-const startGame = (getGameDescription, generateGameStepData, attemptCount = 3) => {
-  const userName = greetAndAskName();
 
   const performGameCycle = (remainingAttemptCount) => {
     if (remainingAttemptCount === 0) {
