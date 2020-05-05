@@ -10,14 +10,14 @@ const startGame = (getGameDescription, generateGameStepData, attemptCount = 3) =
       console.log(`Congratulations, ${userName}!`);
       return;
     }
-    const questionItem = generateGameStepData();
-    console.log(`Question: ${questionItem.question}`);
+    const { question, answer } = generateGameStepData();
+    console.log(`Question: ${question}`);
 
     const userAnswer = readlineSync.question('Your answer: ').trim();
-    const isAnswerCorrect = (userAnswer === questionItem.answer);
+    const isAnswerCorrect = (userAnswer === answer);
 
     if (!isAnswerCorrect) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${questionItem.answer}"`);
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
       return;
     }
     console.log('Correct!');
