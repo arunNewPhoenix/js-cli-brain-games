@@ -7,15 +7,15 @@ const gameDescription = 'What is the result of the expression?';
 const generateMathOperation = () => {
   const operations = {
     add: {
-      symbol: '+',
+      sign: '+',
       fn: (a, b) => a + b,
     },
     sub: {
-      symbol: '-',
+      sign: '-',
       fn: (a, b) => a - b,
     },
     mul: {
-      symbol: '*',
+      sign: '*',
       fn: (a, b) => a * b,
     },
   };
@@ -31,7 +31,7 @@ const generateGameStepData = () => {
   const operation = generateMathOperation();
   const answer = operation.fn(firstNumber, secondNumber).toString();
   return {
-    question: `${firstNumber} ${operation.symbol} ${secondNumber}`,
+    question: `${firstNumber} ${operation.sign} ${secondNumber}`,
     answer,
   };
 };

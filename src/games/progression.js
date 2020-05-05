@@ -11,11 +11,11 @@ const generateGameStepData = () => {
   const progressionLength = 10;
   const startNumber = generateNumber(1, 10);
   const progressionStep = generateNumber(-10, 10);
-  const numbers = generateRandomProgression(progressionLength, startNumber, progressionStep);
+  const progression = generateRandomProgression(progressionLength, startNumber, progressionStep);
   const randomPositionToExclude = generateNumber(0, progressionLength - 1);
-  const numberToExclude = numbers[randomPositionToExclude];
+  const numberToExclude = progression[randomPositionToExclude];
   return {
-    question: numbers.join(' ').replace(numberToExclude.toString(), '..'),
+    question: progression.join(' ').replace(numberToExclude.toString(), '..'),
     answer: numberToExclude.toString(),
   };
 };

@@ -7,11 +7,11 @@ const greetAndAskName = () => {
   return userName;
 };
 
-const startGame = (getGameDescription, generateGameStepData, attempts = 3) => {
+const startGame = (getGameDescription, generateGameStepData, attemptCount = 3) => {
   const userName = greetAndAskName();
 
-  const performGameCycle = (remainingAttempts) => {
-    if (remainingAttempts === 0) {
+  const performGameCycle = (remainingAttemptCount) => {
+    if (remainingAttemptCount === 0) {
       console.log(`Congratulations, ${userName}!`);
       return;
     }
@@ -26,11 +26,11 @@ const startGame = (getGameDescription, generateGameStepData, attempts = 3) => {
       return;
     }
     console.log('Correct!');
-    performGameCycle(remainingAttempts - 1);
+    performGameCycle(remainingAttemptCount - 1);
   };
 
   console.log(getGameDescription);
-  performGameCycle(attempts);
+  performGameCycle(attemptCount);
 };
 
 export default startGame;
